@@ -1,0 +1,84 @@
+@import '../layout/layout.css';
+
+.banner {
+    height: 675px;
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+}
+
+.slogan-circle-stroke {
+    width: 532px;
+    height: 368px;
+    padding-left: 100px;
+    padding-top: 154px;
+}
+
+.circle {
+    position: absolute;
+    display: inline-block;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background-color: var(--blue-50);
+    left: 322px;
+    top: 245px;
+}
+.slogan {
+    position: absolute;
+    display: inline-block;
+    z-index: 1;
+    background-color: transparent;
+}
+
+h1 {
+    line-height: 120%;
+    width: 430px;
+}
+
+.auto-scrollbar-section {
+    height: 80px;
+}
+
+.auto-scrollbar {
+    position: absolute;
+    height: 80px;
+    /* padding-top:40px; */
+    background-color: var(--black-100);
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+}
+
+h4 {
+    display: inline-block !important;
+    color: var(--blue-50);
+    margin-right: 10px;
+}
+
+.sm-circle {
+    width: 15px;
+    height: 15px;
+    margin-right: 10px;
+    border-radius: 50%;
+    background-color: var(--blue-50);
+    left: 322px;
+    top: 245px;
+}
+
+.about-section {
+    height: 832px;
+}
+
+.about {
+    padding-left: 76px;
+    padding-top: 125px;
+}
+
+hr.solid {
+    border-top: 3px solid #bbb;
+}
+
+.offer-section {
+    height: 832px;
+}
