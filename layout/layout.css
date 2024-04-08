@@ -1,6 +1,4 @@
 /* global css */
-
-/* font */
 @font-face {
     font-family: 'Benzin Regular';
     src: url(../font/Benzin-Regular.woff) format('woff');
@@ -15,7 +13,7 @@
 }
 @font-face {
     font-family: 'Benzin Semi-bold';
-    src: url(../font/Benzin-Semibold.woff) format('woff');
+    src: url(../font/Benzin-Medium.woff) format('woff');
     font-weight: 600;
     font-style: normal;
 }
@@ -32,7 +30,7 @@
     font-style: normal;
 }
 
-html *{
+body, html *{
     padding: 0;
     margin: 0;
     font-family: 'Benzin Regular', sans-serif;
@@ -88,17 +86,123 @@ html *{
     --red-90: #5A1C0C;
 }
 
+/* font */
 
-
-h1 {
+.medium {
     font-family: 'Benzin Medium', sans-serif;
+}
+
+.semi-bold {
+    font-family: 'Benzin Semi-bold', sans-serif;
+}
+
+.bold {
+    font-family: 'Benzin Bold', sans-serif;
+}
+
+.bold {
+    font-family: 'Benzin Extra-bold', sans-serif;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+.macro {
+    font-family: 'Benzin Regular', sans-serif;
+    font-size: 6px;
+    line-height: 150%;
+}
+
+.label-s {
+    font-family: 'Benzin Regular', sans-serif;
+    font-size: 10px;
+    letter-spacing: 4%;
+    line-height: 150%;
+}
+
+.small-extra {
+    font-family: 'Benzin Regular', sans-serif;
+    font-size: 8px;
+    line-height: 150%;
+}
+
+.small {
+    font-family: 'Benzin Regular', sans-serif;
+    font-size: 10px;
+    line-height: 150%;
+}
+
+.label-m {
+    font-family: 'Benzin Regular', sans-serif;
+    font-size: 14px;
+    letter-spacing: 4%;
+    line-height: 150%;
+}
+
+.body-m {
+    font-family: 'Benzin Regular', sans-serif;
+    font-size: 12px;
+    line-height: 200%;
+}
+
+.body-l {
+    font-family: 'Benzin Regular', sans-serif;
+    font-size: 16px;
+    line-height: 200%;
+}
+
+.body-xl {
+    font-family: 'Benzin Regular', sans-serif;
+    font-size: 20px;
+    line-height: 200%;
+}
+
+.sub-text {
+    font-family: 'Benzin Regular', sans-serif;
+    font-size: 24px;
+    line-height: 180%;
+}
+
+/* end-font */
+
+/* H1 Text */
+h1 {
+    font-family: 'Benzin Regular', sans-serif;
     font-size: 81px;
     background-color: transparent;
+    line-height: 120%;
 }
-h4 {
+
+
+
+h2 {
     font-family: 'Benzin Bold', sans-serif;
+    font-size: 54px;
+    background-color: transparent;
+    line-height: 130%;
+}
+
+h3 {
+    font-family: 'Benzin Semi-bold', sans-serif;
+    font-size: 44px;
+    background-color: transparent;
+    line-height: 120%;
+}
+
+/* H4 Text */
+h4 {
+    font-family: 'Benzin Regular', sans-serif;
     font-size: 32px;
     background-color: transparent;
+    line-height: 190%;
+}
+
+h5 {
+    font-family: 'Benzin Regular', sans-serif;
+    font-size: 28px;
+    background-color: transparent;
+    line-height: 190%;
 }
 
 header {
