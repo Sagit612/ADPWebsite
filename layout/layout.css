@@ -28,8 +28,7 @@ body, html *{
     padding: 0;
     margin: 0;
     font-family: 'Benzin Regular', sans-serif;
-    color: var(--black-100);
-    background-color: var(--black-00);
+    color: var(--neutral-04);
 }
 
 :root{
@@ -47,15 +46,15 @@ body, html *{
 /* font */
 
 .medium {
-    font-family: 'Benzin Medium', sans-serif;
+    font-family: 'Benzin Medium', sans-serif !important;
 }
 
 .semi-bold {
-    font-family: 'Benzin Semi-bold', sans-serif;
+    font-family: 'Benzin Semi-bold', sans-serif !important;
 }
 
 .bold {
-    font-family: 'Benzin Bold', sans-serif;
+    font-family: 'Benzin Bold', sans-serif !important;
 }
 
 /* end-font */
@@ -84,21 +83,60 @@ h3 {
 }
 
 .body {
-    font-family: 'Benzin Regular', sans-serif;
-    font-size: 16px;
-    line-height: 150%;
+    font-family: 'Benzin Regular', sans-serif !important;
+    font-size: 16px !important;
+    line-height: 150% !important;
+}
+.body.medium {
+    font-family: 'Benzin Medium', sans-serif !important;
+    font-size: 16px !important;
+    line-height: 150% !important;
+}
+.body.semi-bold {
+    font-family: 'Benzin Semi-bold', sans-serif !important;
+    font-size: 16px !important;
+    line-height: 150% !important;
+}
+.body.bold {
+    font-family: 'Benzin Bold', sans-serif !important;
+    font-size: 16px !important;
+    line-height: 150% !important;
 }
 
 .sub {
-    font-family: 'Benzin Regular', sans-serif;
-    font-size: 24px;
-    line-height: 180%;
+    font-family: 'Benzin Regular', sans-serif !important;
+    font-size: 24px !important;
+    line-height: 140% !important;
+    letter-spacing: -1px !important;
 }
+
+.sub.medium {
+    font-family: 'Benzin Medium', sans-serif !important;
+    font-size: 24px;
+    line-height: 140%;
+    letter-spacing: -1px !important;
+}
+
+.sub.semi-bold {
+    font-family: 'Benzin Semi-bold', sans-serif !important;
+    font-size: 24px;
+    line-height: 140%;
+    letter-spacing: 0.1px !important;
+}
+
+.sub.bold {
+    font-family: 'Benzin Bold', sans-serif !important;
+    font-size: 24px;
+    line-height: 140%;
+    letter-spacing: 0.1px !important;
+}
+
 
 /* end */
 
 .container {
     width: 100%;
+    background-color: var(--neutral-01);
 }
 
 nav {
