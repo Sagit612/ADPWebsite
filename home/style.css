@@ -1,38 +1,38 @@
 @import url('../layout/layout.css');
 
 .banner {
+    position: relative;
     height: 758px;
     background-image: url('./../images/78fbd7bdca02b8cf6ba36207f97cc641.jpeg');
     background-size: cover;
 }
 
 .slogan-circle-stroke {
-    position: relative;
-    width: 614px;
-    height: 402px;
-    padding-left: 104px;
-    padding-top: 340px;
+    position: absolute;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 656px;
+    height: 271px;
+    bottom: 45px;
+    right: 75px;
 }
 
 .banner .circle {
     position: absolute;
-    width: 245px;
-    height: 245px;
+    width: 271px;
+    height: 271px;
     border-radius: 50%;
     background-color: var(--primary-01);
-    margin-left: 202px;
-    margin-top: 157px;
+    /* margin-left: 385px; */
 }
 .slogan {
     position: absolute;
-    width: 430px;
+    width: 614px;
+    margin-right: 42px;
+    text-align: right;
     z-index: 1;
     background-color: transparent;
-}
-
-h1 .offer-heading-text, h1 .about-heading-text {
-    line-height: 120%;
-    width: 430px;
 }
 
 .auto-scrollbar-section {
@@ -57,103 +57,80 @@ h1 .offer-heading-text, h1 .about-heading-text {
     width: 100px;
     height: 30px;
     border-radius: 28px;
-    background: linear-gradient(90deg, rgba(8, 8, 8, 0.00) 0%, #1A00E0 100%);
+    background: var(--gradient-02);
 }
 
-/* .about, .offer {
-    position: relative;
+.about .title {
+    width: 603px;
     display: flex;
-    justify-content: flex-start;
-    border-bottom: 1px solid var(--black-100);
+    align-items: flex-start;
+    gap: 20px;
 }
 
 
-.about-heading, .offer-heading {
-    padding: 125px 0px 0px 76px;
-}
-
-.about-heading-text, .offer-heading-text {
-    width: 391px;
+.md-oval {
+    width: 190px;
+    height: 32px;
+    border-radius: 28px;
+    background: var(--gradient-01);
 }
 
 .divider {
-    margin: 125px 0px 0px 49px;
-    height: 572px;
-    width:4px;
+    width: 4px;
+    height: 100%;
+    align-self: stretch;
+    stroke-width: 4px;
     border-radius: 2px;
-    background-color: var(--black-100);
-    opacity: 0.25;
+    background-color: var(--primary-01);
+    stroke: var(--primary-01);
+    margin: auto;
 }
 
-.about-text-container, .offer-text-container {
-    padding: 125px 76px 0px 76px;
-    width: 746px;
+.about-content, .offer-content {
+    width: 633px;
+    text-align: justify;
 }
 
-.about-text-container h4 {
-    text-align: right;
+
+.offer .title {
+    display: flex;
+    align-items: flex-start;
+    width: 603px;
+    gap: 20px;
 }
 
 .offer-text {
     display: flex;
-    justify-content: space-between;
-    width: 670;
-    padding-bottom: 48px;
+    align-items: flex-start;
+    gap: 50px;
 }
-.offer-text h4 {
-    padding-bottom: 55px;
+
+.offer-text .services, .popular-sectors {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
 }
 
 .offer-text ul {
-    padding-left: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
-.offer-text li {
-    padding-bottom: 20px;
-}
-
-.offer-text-container button {
-    height: 44px;
-    width: 164px;
-    border: 2px solid var(--black-100);
-    border-radius: 22px;
-}
-
-.project {
-    position: relative;
-    width: 100%;
-    height: 2732px;
-    border-bottom: 1px solid var(--black-100);
-}
-
-.project .title {
+.offer-text ul li {
     display: flex;
     align-items: center;
-    padding-top: 100px;
-    height: 240px;
-    width: 50%;
-    padding-bottom: 68px;
+    list-style-type: none;
 }
 
-.project h1 {
-    position: absolute;
-    padding-left: 10px;
-    display: inline-block;
-    z-index: 1;
+.offer-text ul li::before{
+    content: url('./assets/Ellipse\ 54.svg');
+    width: 1rem;
+    height: 1rem;
 }
 
-.project .circle {
-    position: absolute;
-    display: inline-block;
-    width: 240px;
-    height: 240px;
-    background-color: var(--blue-50);
-    border-radius: 120px;
+.offer-text ul li span {
+    margin-left: 20px;
 }
 
-.project-images {
-    width: 99%;
-    margin: auto;
-    height: 2300px;
-    border: 2px solid var(--black-100);
-} */
+
