@@ -148,14 +148,13 @@ h3 {
 .page-content {
     display: flex;
     padding: 20px 30px;
-    gap: 20px;
     background-color: #000000;
 }
 
 .layout-panel {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 0px;
     position: relative;
 }
 
