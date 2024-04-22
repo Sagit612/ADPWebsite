@@ -153,6 +153,7 @@
 
 .project.container {
     height: fit-content;
+    background-color: var(--neutral-03);
 }
 
 .project .title {
@@ -171,6 +172,10 @@
     z-index: 1;
 }
 
+.project .title .content h2 {
+    color: var(--neutral-01);
+}
+
 .project .title .circle {
     width: 150px;
     height: 150px;
@@ -180,6 +185,7 @@
 
 .gallery {
     padding: 80px 0px 0px;
+    background-color: var(--neutral-03);
 }
 
 
