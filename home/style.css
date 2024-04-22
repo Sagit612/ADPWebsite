@@ -2,7 +2,7 @@
 
 .banner {
     position: relative;
-    height: 758px;
+    height: 657px;
     background-image: url('./../images/78fbd7bdca02b8cf6ba36207f97cc641.jpeg');
     background-size: cover;
 }
@@ -179,7 +179,7 @@
 }
 
 .gallery {
-    padding: 0%;
+    padding: 80px 0px 0px;
 }
 
 
