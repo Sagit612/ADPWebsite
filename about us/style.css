@@ -1,0 +1,331 @@
+@import url('../layout/layout.css');
+
+nav .logo {
+    width: 160px;
+    height: 50px;
+}
+
+.sub.selected {
+    color: var(--neutral-01);
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 0;
+}
+
+.streak-introduction {
+    width: 100%;
+    height: 32px;
+    border-radius: 28px;
+    background: var(--Gradient-2, linear-gradient(90deg, #000 0%, #1A00E0 100%));
+}
+
+.introduction-title {
+    color: var(--primary-01);
+}
+
+.introduction-content {
+    text-align: justify;
+    width: 827px;
+}
+
+.container .image {
+    width: 100%;
+    height: 700px;
+    border-radius: 20px;
+}
+
+.who {
+    display: flex;
+    gap: 10px;
+}
+
+.streak-who {
+    width: 190px;
+    height: 32px;
+    border-radius: 28px;
+    background: var(--Gradient-2, linear-gradient(90deg, #000 0%, #1A00E0 100%));
+}
+
+.purpose-title {
+    color: var(--primary-01);
+}
+
+.purpose-body {
+    text-align: justify;
+    width: 827px;
+}
+
+.why {
+    height: 85px;
+}
+
+.why-title {
+    position: absolute;
+}
+
+.why-streak {
+    width: 730px;
+    height: 40px;
+    border-radius: 28px;
+    position: absolute;
+    background: linear-gradient(90deg, #000 0%, #1A00E0 100%);
+    align-self:flex-end;
+}
+
+.achievement {
+    display: flex;
+    gap: 300px;
+    padding-bottom: 80px;
+}
+
+.year {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.years {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.year-number {
+    position: absolute;
+    width: max-content;
+}
+
+.year-circle {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: var(--primary-01);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.year-content {
+    color: var(--neutral-03);
+}
+
+.project {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.projects {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.projects-number {
+    position: absolute;
+    width: max-content;
+}
+
+.projects-circle {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: var(--primary-01);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.projects-content {
+    color: var(--neutral-03);
+}
+
+.product {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.products {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.products-number {
+    position: absolute;
+    width: max-content;
+}
+
+.products-circle {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: var(--primary-01);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.products-content {
+    color: var(--neutral-03);
+}
+
+.values {
+    display: flex;
+    width: 100%;
+    height: 10px;
+    padding: 20px 0px 20px 0px;
+    align-items: center;
+    background: var(--Primary-1, #1A00E0);
+}
+
+.values-streak {
+    width: 100px;
+    height: 30px;
+    flex-shrink: 0;
+    border-radius: 28px;
+    background: var(--Gradient-2, linear-gradient(90deg, #1A00E0 0%, #F2F2F2 100%));
+}
+
+.vs {
+    background-color: var(--neutral-04);
+}
+
+.vision-mission {
+    width: 1190px;
+    height: 190px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 100px;
+}
+
+.vision {
+    width: 500px;
+    gap: 20px;
+}
+
+.vision-title {
+    color: var(--primary-01);
+}
+
+.vision-content {
+    text-align: justify;
+    color: var(--neutral-01)
+}
+
+.mission {
+    width: 500px;    
+    gap: 20px;
+}
+
+.mission-title {
+    color: var(--primary-01);
+}
+
+.mission-content {
+    text-align: justify;
+    color: var(--neutral-01)
+}
+
+.team {
+    background-color: var(--neutral-04);
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 80px;
+}
+
+.team-title {
+    text-align: center;
+    color: var(--primary-01);
+}
+
+.team-image {
+    display: flex;
+    width: 1360px;
+    height: 600px;
+    align-items: flex-start;
+    gap: 30px;
+}
+
+.team-members {
+    display: flex;
+    width: 400px;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-shrink: 0;
+}
+
+.team-members-images {
+    width: 400px;
+    height: 600px;
+    flex-shrink: 0;
+    border-radius: 20px;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 71.67%, #1A00E0 100%), url(<path-to-image>) lightgray 50% / cover no-repeat;
+}
+
+.team-members-content {
+    display: flex;
+    height: 84px;
+    flex-direction: column;
+    align-items: flex-start;
+    position: absolute;
+    left: 34px;
+    bottom: 10px;
+}
+
+/* .contact {
+    display: flex;
+    padding: 40px 0px;
+    justify-content: center;
+    align-items: flex-start;
+    align-content: flex-start;
+    gap: 0px 20px;
+    align-self: stretch;
+    flex-wrap: wrap;
+    background: var(--Primary-1, #1A00E0);
+}
+
+.talk-to-us {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.talk-vector {
+    width: 85.056px;
+    height: 50px;
+    fill: var(--neutral-01);
+} */
+
+.CTA {
+    background-color: var(--primary-01);
+    justify-content: center;
+    padding: 40px 0px !important;
+}
+
+.CTA-details div {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.CTA-details h1 {
+    display: inline-block;
+    text-align: center;
+}
+
+.contacts .container {
+    height: fit-content;
+    column-count: 4;
+    column-gap: 80px;
+}
