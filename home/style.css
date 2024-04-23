@@ -167,18 +167,18 @@
 
 .logos{
     height: 150px !important;
-    background-color: var(--neutral-03);
+    background-color: var(--neutral-04);
 }
 
 .logos .logos-slide {
     height: 150px !important;
-    background-color: var(--neutral-03);
+    background-color: var(--neutral-04);
     display: inline-block;
 }
 
 .logos .logos-slide .content {
     height: 150px !important;
-    background-color: var(--neutral-03);
+    background-color: var(--neutral-04);
     display: flex;
     align-items: center;
     gap: 50px;
@@ -190,7 +190,7 @@
 
 .project.container {
     height: fit-content;
-    background-color: var(--neutral-03);
+    background-color: var(--neutral-04);
 }
 
 .project .title {
@@ -222,7 +222,7 @@
 
 .gallery {
     padding: 80px 0px 0px;
-    background-color: var(--neutral-03);
+    background-color: var(--neutral-04);
 }
 
 
