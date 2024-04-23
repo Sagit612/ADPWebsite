@@ -39,12 +39,12 @@ body, html *{
     --neutral-04: #FFFFFF;
 
     /* primary */
-    --primary-01: #1F4AF3;
+    --primary-01: #1A00E0;
     --primary-02: #C4CFFC;
 
     /* linear grandient */
     --gradient-01: linear-gradient(90deg, #000 0%, #1A00E0 100%);
-    --gradient-02: linear-gradient(90deg, rgba(8, 8, 8, 0.00) 0%, #1A00E0 100%);
+    --gradient-02: linear-gradient(90deg, #1A00E0 0%, #F2F2F2 100%);
 }
 
 /* font */
@@ -175,6 +175,10 @@ h3 {
 }
 
 header {
+    width: 100%;
+}
+
+footer {
     width: 100%;
 }
 
