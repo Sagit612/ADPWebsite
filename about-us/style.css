@@ -9,12 +9,6 @@ nav .logo {
     color: var(--neutral-01);
 }
 
-.container {
-    display: flex;
-    justify-content: center;
-    padding-bottom: 0;
-}
-
 .streak-introduction {
     width: 100%;
     height: 32px;
@@ -59,11 +53,27 @@ nav .logo {
 }
 
 .why {
-    height: 85px;
+    height: fit-content;
+    border-top: 1px var(--neutral-04);
+    border-top-style: solid;
 }
 
+
 .why-title {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+
+.why-title .content {
     position: absolute;
+    z-index: 1;
+}
+
+.why-title .content h2 {
+    text-align: center;
 }
 
 .why-streak {
@@ -72,13 +82,14 @@ nav .logo {
     border-radius: 28px;
     position: absolute;
     background: linear-gradient(90deg, #000 0%, #1A00E0 100%);
-    align-self:flex-end;
+    
 }
 
 .achievement {
     display: flex;
     gap: 300px;
-    padding-bottom: 80px;
+    justify-content: center;
+    align-items:flex-end;
 }
 
 .year {
@@ -177,31 +188,51 @@ nav .logo {
     color: var(--neutral-03);
 }
 
-.values {
-    display: flex;
-    width: 100%;
-    height: 10px;
-    padding: 20px 0px 20px 0px;
-    align-items: center;
-    background: var(--Primary-1, #1A00E0);
+/* text slick slider */
+@keyframes slide {
+    from {
+      transform: translateX(-100%);
+    }
+    to {
+      transform: translateX(0);
+    }
 }
 
-.values-streak {
+.slick-slider {
+    height: 74px;
+    width: 100%;
+    background-color: var(--primary-01);
+    position: relative;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.texts-slide {
+    height: 74px;
+    display: inline-block;
+    background-color: var(--primary-01);
+}
+.texts-slide .content {
+    height: 74px;
+    background-color: var(--primary-01);
+    display: flex;
+    justify-content:flex-end;
+    padding: 0px 0px 0px 30px;
+    gap: 20px;
+    align-items: center;
+    animation: 35s slide infinite linear;
+}
+
+.sm-oval {
     width: 100px;
     height: 30px;
-    flex-shrink: 0;
     border-radius: 28px;
-    background: var(--Gradient-2, linear-gradient(90deg, #1A00E0 0%, #F2F2F2 100%));
+    background: var(--gradient-02);
 }
-
-.vs {
-    background-color: var(--neutral-04);
-}
+/* end text slick slider */
 
 .vision-mission {
-    width: 1190px;
-    height: 190px;
-    display: flex;
+    background-color: var(--neutral-04);
     justify-content: center;
     align-items: flex-start;
     gap: 100px;
@@ -237,22 +268,33 @@ nav .logo {
 
 .team {
     background-color: var(--neutral-04);
-    display: flex;
     flex-direction: column;
-    padding-bottom: 80px;
+    gap: 80px;
+    padding-top: 0px;
 }
 
-.team-title {
+
+.team .title h2 {
     text-align: center;
     color: var(--primary-01);
 }
-
-.team-content {
+.members {
     display: flex;
-    width: 100%px;
     height: 600px;
-    justify-content: center;
     gap: 30px;
+    background-color: transparent;
+}
+
+.members-slide {
+    display: inline-block;
+}
+
+.members-slide .content {
+    display: flex;
+    justify-content:flex-end;
+    gap: 30px;
+    align-items: center;
+    animation: 25s slide infinite linear;
 }
 
 .members-card {
@@ -262,30 +304,48 @@ nav .logo {
 }
 
 .card-image {
-    width: 100%;
-    height: 100%;
-    background-size: cover;
-    background-position: center;
     position: relative;
     border-radius: 20px;
-    background-image: url('../images/AnhTu.jpg');
-}
-
-.privacy-overlay {
     width: 100%;
     height: 100%;
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 71.67%, #1A00E0 100%), url(<path-to-image>) rgb(0, 0, 0) 50% / cover no-repeat;
-    border-radius: 20px;
-    position: absolute;
-    opacity: 25%;
 }
 
-.card-content {
-    padding-top: 506px;
-    padding-right: 82px;
-    padding-bottom: 10px;
-    padding-left: 34px;
+.card-image::after{
     position: absolute;
+    content:"";
+    height:100%;
+    width:100%;
+    border-radius: 20px;
+    top:0;
+    left:0;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.00) 71.67%, #1A00E0 100%), url(<path-to-image>) transparent 50% / cover no-repeat;
+}
+
+.card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    filter:saturate(0);
+    border-radius: 20px;
+}
+
+
+.card-content {
+    border-radius: 20px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    flex-direction: column;
+    position: absolute;
+    left: 34px;
+    bottom: 20px;
+    background-color: transparent;
+    z-index: 1;
+}
+
+.card-content .members-name {
+    width: 80%;
 }
 
 .CTA {
