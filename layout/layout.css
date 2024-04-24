@@ -240,3 +240,20 @@ nav .logo {
     padding: 125px 0px 0px 76px;
 }
 
+.md-oval {
+    width: 190px;
+    height: 32px;
+    border-radius: 28px;
+    background: var(--gradient-01);
+}
+
+.divider {
+    width: 4px;
+    height: 100%;
+    align-self: stretch;
+    stroke-width: 4px;
+    border-radius: 2px;
+    background-color: var(--primary-01);
+    stroke: var(--primary-01);
+    margin: auto;
+}
